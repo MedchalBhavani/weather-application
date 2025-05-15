@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1>Smart Weather</h1>
+      <div class="fav-icon" title="Add to favourites">
+        <i class="fa-regular fa-star"></i>
+      </div>
+    </header>
+
+    <div class="main-buttons">
+      <button id="checkWeatherBtn">Check Weather</button>
+      <button id="compareWeatherBtn">Compare Weather</button>
+    </div>
+
+    <!-- Check Weather Section -->
+    <div id="checkWeatherSection" class="section hidden">
+      <div class="form-group">
+        <select id="singleCitySelect">
+          <option value="">Select a city</option>
+          <option value="Bengaluru">Bengaluru</option>
+          <option value="Chennai">Chennai</option>
+          <option value="Warangal">Warangal</option>
+        </select>
+        <button id="getSingleWeather">Search</button>
+      </div>
+      <div class="weather-display" id="singleWeatherDisplay">
+<img id="weatherImage" alt="Weather condition image" style="display: none;  margin-bottom: 10px;" />
+        <div id="weatherText"></div>
+</div>
+</div>
+    </div>
+
+    <!-- Compare Weather Section -->
+    <div id="compareWeatherSection" class="section hidden">
+      <div class="form-group compare">
+        <select id="city1">
+          <option value="">City 1</option>
+          <option value="Bengaluru">Bengaluru</option>
+          <option value="Chennai">Chennai</option>
+          <option value="Warangal">Warangal</option>
+        </select>
+        <button id="compareBtn">🔍</button>
+        <select id="city2">
+          <option value="">City 2</option>
+          <option value="Warangal">Warangal</option>
+          <option value="Nellore">Nellore</option>
+          <option value="Chennai">Chennai</option>
+        </select>
+      </div>
+      <div class="compare-display">
+<img  alt="Weather condition image" style="display: none;  margin-bottom: 10px;" id="weatherImage2"/>
+        <div id="weatherText2"></div>
+        <div id="weather1" class="weather-display"></div>
+        <div id="weather2" class="weather-display"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
