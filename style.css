@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 
 body {
@@ -18,7 +18,7 @@ body {
 }
 
 .app-container {
-  background: rgba(255, 255, 255, 0.7); /* semi-transparent background */
+  background: transparent; /* semi-transparent background */
   padding: 2rem;
   border-radius: 20px;
   max-width: 600px;
@@ -87,7 +87,7 @@ button:hover {
   flex-wrap: wrap;
 }
 
-.form-group.compare {
+.form-group compare {
   justify-content: space-between;
   margin-left: 0;
 }
@@ -95,12 +95,13 @@ button:hover {
 select {
   flex: 1;
   padding: 0.5rem;
-  border: 1px solid #ccc;
+  border: 3px solid #ccc;
+  background: transparent;
   border-radius: 8px;
 }
 
 .weather-display {
-  background: rgba(255, 255, 255, 0.8);
+  background: transparent;
   padding: 2rem;
   border-radius: 10px;
   text-align: center;
