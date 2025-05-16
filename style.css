@@ -98,6 +98,7 @@ select {
   border: 3px solid #ccc;
   background: transparent;
   border-radius: 8px;
+  color: white;
 }
 
 .weather-display {
